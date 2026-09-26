@@ -1,0 +1,9 @@
+Nota: -U nombre de usuario
+      -h nombre del host
+      -d nombre de base datos
+
+La primera parte es la ruta donde se encuentra pg_dump.exe (el cual permite la creación del backup.
+La segunda parte es todo el comando incluyendo nombre usuario, host y DB, se finaliza con -f
+La tercera parte es la ruta donde se guarada el archivo .backup (la ruta debe ir entre comillas dobles "")
+
+"C:\Program Files\PostgreSQL\18\bin\pg_dump.exe" -U postgres -h localhost -Fc -d EscuelaSQL -f "tu ruta\EscuelaSQL.backup"
